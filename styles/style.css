@@ -86,6 +86,9 @@ header {
   border-radius: 10px;
   margin-bottom: 40px;
   flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 header nav {
@@ -317,7 +320,45 @@ textarea:focus {
 textarea {
   resize: none;
 }
+/* Projects */
 
+.projects-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+.project-card a:hover {
+  background-color: #245a12;
+}
 /* (Mobile)*/
 @media (max-width: 768px) {
   body {
