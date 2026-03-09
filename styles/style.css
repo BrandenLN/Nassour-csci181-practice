@@ -359,6 +359,69 @@ textarea {
 .project-card a:hover {
   background-color: #245a12;
 }
+
+/* Bento-grid*/
+.bento-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 16px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 4px rgba(207, 106, 106, 0.7);
+  background: #e73333;
+  padding: 12px;
+  border-radius: 16px;
+}
+.gallery {
+  max-width: 700px;
+  margin: auto;
+
+  background: #5a0000;
+  padding: 12px;
+  border-radius: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+
+.item {
+  border: 4px solid #cc0000;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #cc0000;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* sizes */
+
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.medium {
+  grid-column: span 2;
+}
+
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
 /* (Mobile)*/
 @media (max-width: 768px) {
   body {
