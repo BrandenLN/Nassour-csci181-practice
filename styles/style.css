@@ -445,7 +445,13 @@ textarea {
     margin-bottom: 10px;
   }
 }
-
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 .skip-link {
   position: absolute;
   top: 0;
