@@ -528,3 +528,40 @@ body.dark {
   --text: #f5f5f5;
   */
 }
+
+/*Weather*/
+#weather-output {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#weather-output.loading {
+  color: #660;
+}
+
+#weather-output.error {
+  color: red;
+  font-weight: bold;
+}
+
+#weather-output.weather {
+  color: #222;
+}
+
+#weather-output p {
+  margin: 0.5rem 0;
+}
+
+#weather-output strong {
+  font-size: 2rem;
+}
+#weather-output {
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  text-align: center;
+
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  max-width: 300px;
+}
